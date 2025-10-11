@@ -53,7 +53,7 @@ elitecart/
 │ ├── shoes/
 │ ├── bags/
 │ └── logo.png
-└── 📖 README.md # Project documentation
+└── README.md # Project documentation
 
 ### Technology Stack
 

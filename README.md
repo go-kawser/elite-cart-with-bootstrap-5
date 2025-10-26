@@ -1,4 +1,4 @@
-# EliteCart - Modern E-Commerce Platform
+# EliteCart | Modern E-Commerce Platform
 
 ### Overview
 
@@ -42,18 +42,18 @@ EliteCart is a premium, fully-responsive e-commerce frontend solution that combi
 ### Project Structure
 
 elitecart/
-├── index.html # Main application file
-├── css/
-│ ├── styles.css # Main stylesheet with components
-├── js/
-│ └── script.js # Modular JavaScript functionality
-├── images/ # Product images and assets
-│ ├── banner-images/
-│ ├── categories/
-│ ├── shoes/
-│ ├── bags/
-│ └── logo.png
-└── README.md # Project documentation
+index.html # Main application file
+css/
+styles.css # Main stylesheet with components
+js/
+script.js # Modular JavaScript functionality
+images/ # Product images and assets
+banner-images/
+categories/
+shoes/
+bags/
+logo.png
+README.md # Project documentation
 
 ### Technology Stack
 
@@ -86,12 +86,12 @@ elitecart/
 
 1. Clone the repository
 
-- git clone https://github.com/Kawser420/elite-cart-with-bootstrap-5.git
+- git clone https://github.com/go-kawser/elite-cart-with-bootstrap-5.git
 - cd elitecart
 
 2. Set up the project
 
-##### No build process required - it's ready to use!
+##### No build process required | it's ready to use!
 
 #### Theme Customization
 
@@ -143,7 +143,7 @@ class CustomProductManager extends ProductManager {
 
 #### Contributing
 
-We love contributions! Here's how you can help:
+**We love contributions! Here's how you can help:**
 
 - Fork the repository
 - Create a feature branch (git checkout -b feature/AmazingFeature)
@@ -193,8 +193,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ##### Show Your Support
 
-If you find this project helpful, please give it a star on GitHub!
+**If you find this project helpful, please give it a star on GitHub!**
 
 ---
 
-Note: This is a frontend-only implementation. For production use, integrate with a backend API for complete e-commerce functionality including user authentication, payment processing, and order management.
+**Note:** This is a frontend-only implementation. For production use, integrate with a backend API for complete e-commerce functionality including user authentication, payment processing, and order management.

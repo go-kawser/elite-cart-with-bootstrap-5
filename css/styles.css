@@ -1,4 +1,4 @@
-/* ===== CSS Reset & Variables ===== */
+/* CSS Reset and Variables */
 :root {
   /* Modern Blue Theme (Default) */
   --primary-color: #2563eb;
@@ -32,7 +32,7 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
 
-  /* Spacing & Layout */
+  /* Spacing and Layout */
   --border-radius: 12px;
   --border-radius-lg: 16px;
   --border-radius-xl: 24px;
@@ -40,7 +40,7 @@
   --transition-fast: all 0.15s ease;
 }
 
-/* ===== Dark Theme ===== */
+/* Dark Theme */
 [data-theme="dark"] {
   --bg-primary: #0f172a;
   --bg-secondary: #1e293b;
@@ -54,7 +54,7 @@
     0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== Theme Colors ===== */
+/* Theme Colors */
 [data-color-theme="modern-blue"] {
   --primary-color: #2563eb;
   --primary-dark: #1d4ed8;
@@ -90,7 +90,7 @@
   --accent-color: #f472b6;
 }
 
-/* ===== Base Styles ===== */
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -110,7 +110,7 @@ body {
   min-height: 80vh;
 }
 
-/* ===== Announcement Bar ===== */
+/* Announcement Bar */
 .announcement-bar {
   background: linear-gradient(
     135deg,
@@ -191,7 +191,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* ===== Enhanced Navbar ===== */
+/* Navbar */
 .navbar {
   background: var(--bg-primary) !important;
   box-shadow: var(--shadow);
@@ -369,7 +369,7 @@ body {
   transform: translateX(5px);
 }
 
-/* ===== Hero Section ===== */
+/* Hero Section */
 .hero-section {
   background: linear-gradient(
     135deg,
@@ -594,7 +594,7 @@ body {
   color: var(--text-muted);
 }
 
-/* ===== Features Section ===== */
+/* Features Section */
 .features-section {
   padding: 4rem 0;
   background: var(--bg-secondary);
@@ -651,7 +651,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== Categories Section ===== */
+/* Categories Section */
 .categories-section {
   padding: 4rem 0;
 }
@@ -734,7 +734,7 @@ body {
   opacity: 0.9;
 }
 
-/* ===== Products Section ===== */
+/* Products Section */
 .products-section {
   padding: 4rem 0;
   background: var(--bg-secondary);
@@ -904,7 +904,7 @@ body {
   box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
 }
 
-/* ===== Newsletter Section ===== */
+/* Newsletter Section */
 .newsletter-section {
   padding: 4rem 0;
   background: linear-gradient(
@@ -989,7 +989,7 @@ body {
   text-align: center;
 }
 
-/* ===== Footer ===== */
+/* Footer */
 .footer {
   background: var(--bg-primary);
   padding: 4rem 0 2rem;
@@ -1112,7 +1112,7 @@ body {
   color: var(--text-muted);
 }
 
-/* ===== Animations ===== */
+/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1144,7 +1144,7 @@ body {
   }
 }
 
-/* ===== Responsive Design ===== */
+/* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
@@ -1203,3 +1203,5 @@ body {
     padding: 1.5rem;
   }
 }
+
+/* CSS END */

@@ -1,4 +1,5 @@
-// Theme Management System
+// JS Start
+// Here is Theme Management
 class ThemeManager {
   constructor() {
     this.currentTheme = "modern-blue";
@@ -14,7 +15,6 @@ class ThemeManager {
   }
 
   loadPreferences() {
-    // Load theme and dark mode preferences from localStorage
     const savedTheme = localStorage.getItem("theme");
     const savedDarkMode = localStorage.getItem("darkMode");
 
@@ -23,7 +23,6 @@ class ThemeManager {
   }
 
   bindEvents() {
-    // Theme color buttons
     document.querySelectorAll(".theme-btn").forEach((btn) => {
       btn.addEventListener("click", (e) => {
         this.setTheme(e.target.dataset.theme);
@@ -35,7 +34,6 @@ class ThemeManager {
       this.toggleDarkMode();
     });
 
-    // System preference detection
     if (window.matchMedia) {
       const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -45,7 +43,7 @@ class ThemeManager {
         this.applyTheme();
       }
 
-      // Listen for changes
+      // Listen For Changes
       mediaQuery.addEventListener("change", (e) => {
         if (!localStorage.getItem("darkMode")) {
           this.isDarkMode = e.matches;
@@ -58,8 +56,6 @@ class ThemeManager {
 
   setTheme(themeName) {
     this.currentTheme = themeName;
-
-    // Update active state
     document.querySelectorAll(".theme-btn").forEach((btn) => {
       btn.classList.remove("active");
     });
@@ -79,10 +75,10 @@ class ThemeManager {
   applyTheme() {
     const html = document.documentElement;
 
-    // Apply color theme
+    // Apply color themes
     html.setAttribute("data-color-theme", this.currentTheme);
 
-    // Apply dark/light mode
+    // Apply dark and light mode
     if (this.isDarkMode) {
       html.setAttribute("data-theme", "dark");
     } else {
@@ -133,7 +129,6 @@ class ProductManager {
   }
 
   bindEvents() {
-    // Add to cart buttons
     document.querySelectorAll(".add-to-cart").forEach((btn) => {
       btn.addEventListener("click", (e) => {
         this.addToCart(e.target.closest(".product-card"));
@@ -223,7 +218,6 @@ class ProductManager {
   }
 
   showNotification(message, type = "info") {
-    // Create notification element
     const notification = document.createElement("div");
     notification.className = `notification notification-${type}`;
     notification.innerHTML = `
@@ -233,7 +227,7 @@ class ProductManager {
             </div>
         `;
 
-    // Add styles
+    // Add Styles
     Object.assign(notification.style, {
       position: "fixed",
       top: "100px",
@@ -253,12 +247,12 @@ class ProductManager {
 
     document.body.appendChild(notification);
 
-    // Animate in
+    // Animate In
     setTimeout(() => {
       notification.style.transform = "translateX(0)";
     }, 100);
 
-    // Remove after delay
+    // Remove After Selay
     setTimeout(() => {
       notification.style.transform = "translateX(400px)";
       setTimeout(() => {
@@ -320,7 +314,6 @@ class SearchManager {
   }
 
   handleSearch(query) {
-    // Real-time search functionality would go here
     console.log("Searching for:", query);
   }
 
@@ -332,7 +325,6 @@ class SearchManager {
   }
 
   showNotification(message, type) {
-    // Reuse the notification system from ProductManager
     const notification = document.createElement("div");
     notification.textContent = message;
     notification.style.cssText = `
@@ -417,12 +409,10 @@ class NewsletterManager {
   }
 
   showNotification(message, type) {
-    // Simple notification implementation
-    alert(message); // In production, use a proper notification system
+    alert(message);
   }
 }
 
-// Smooth Scrolling and Animations
 class ScrollManager {
   constructor() {
     this.init();
@@ -434,7 +424,6 @@ class ScrollManager {
   }
 
   bindEvents() {
-    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", (e) => {
         e.preventDefault();
@@ -479,7 +468,7 @@ class ScrollManager {
       });
     }, observerOptions);
 
-    // Observe elements for animation
+    // Elements for animation
     document
       .querySelectorAll(".product-card, .feature-card, .category-card")
       .forEach((el) => {
@@ -488,7 +477,7 @@ class ScrollManager {
   }
 }
 
-// Initialize all functionality when DOM is loaded
+// DOM Load
 document.addEventListener("DOMContentLoaded", function () {
   new ThemeManager();
   new ProductManager();
@@ -524,7 +513,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.head.appendChild(style);
 });
 
-// Error handling for images
+// Error Handling For Images
 window.addEventListener(
   "error",
   function (e) {
@@ -536,3 +525,5 @@ window.addEventListener(
   },
   true
 );
+
+// JS End
